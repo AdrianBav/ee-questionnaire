@@ -1,0 +1,96 @@
+
+/* ********** General ********** */
+
+.sub-header {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Margins */
+.mt1 {
+	margin-top: 10px;
+}
+.mt3 {
+	margin-top: 30px;
+}
+.mt5 {
+	margin-top: 50px;
+}
+.mt7 {
+	margin-top: 70px;
+}
+.mb4 {
+	margin-bottom: 40px;
+}
+.mr1 {
+	margin-right: 10px;
+}
+
+.initially-hidden {
+	display: none;
+}
+
+/* Buttons */
+button span, a span {
+	padding-right: 5px;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+
+/* ********** Top Navigation Bar ********** */
+
+/* Move down content because we have a fixed navbar that is 50px tall. */
+body {
+  padding-top: 50px;
+}
+
+/* Override bootstrap styles. */
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus {
+    color: #777
+}
+
+
+/* ********** Sticky footer ********** */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	background-color: #f5f5f5;
+}
+.text-copyright {
+	margin: 20px 0;
+}
+
+
+/* ********** Questionnaire page ********** */
+
+#reminder-form {
+	margin-top: 25px;
+}
+
+.jumbotron.questionnaire-info {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 20px;
+}
+
+button.table-popover {
+	padding: 0;
+}

@@ -1,0 +1,8 @@
+
+# Remove the index.php file from the URL
+# Any HTTP request other than those for index.php, images, and robots.txt is treated as a request for your index.php file.
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|robots\.txt|favicon\.ico)
+RewriteCond $1 !^(tcpdf)
+RewriteRule ^(.*)$ /index.php/$1 [L]

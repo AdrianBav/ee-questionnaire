@@ -1,0 +1,64 @@
+/* make modal larger */
+.modal {
+    top: 50%;
+    left: 50%;
+    width:700px;
+    margin: -250px 0 0 -280px;
+    overflow: auto;
+}
+
+.modal.fade {
+    top: -25%;
+    -webkit-transition: opacity .3s linear,top .3s ease-out;
+    -moz-transition: opacity .3s linear,top .3s ease-out;
+    -ms-transition: opacity .3s linear,top .3s ease-out;
+    -o-transition: opacity .3s linear,top .3s ease-out;
+    transition: opacity .3s linear,top .3s ease-out;
+}
+
+.modal.fade.in {
+    top: 50%;
+}
+
+.modal-body {
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+/* put the categories in two columns */
+#categories ul {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+/* make the thumbnail grid pretty */
+.thumbnails {
+	list-style: none;
+	margin: 0;
+    padding: 0;
+	margin-left: -30px;
+    text-align: justify;
+    *zoom: 1;
+}
+.thumbnails:before, .thumbnails:after {
+    display: table;
+    content: "";
+}
+.thumbnails:after {
+    clear: both;
+}
+
+.row-fluid .thumbnails {
+    margin-left: 0;
+}
+
+.thumbnails li{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	float:none;
+	height:180px;
+    margin-bottom: 18px;
+    margin-left: 30px;
+}
